@@ -1,0 +1,44 @@
+.accordion{
+
+    &__question{
+        background-color: $mainColor-lighter;
+        border-radius: 5px;
+        color: $text-light;
+        cursor: pointer;
+        margin-top: 2px;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: all 0.4s ease-in-out;    
+        
+
+        
+        &:hover,
+        &:focus {
+            background-color: $secondColor;
+        }
+
+
+    }
+    
+    .active + div{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        
+    }
+
+
+    &__answer{
+        padding: 1.25rem 1.5rem;
+        background-color: rgba(0, 53, 102, .1);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: none;
+        line-height: 1.5;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .2s ease-out;
+    }
+}

@@ -1,0 +1,43 @@
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    &--column{
+        flex-direction: column;
+    }
+
+    &--space-between{
+        justify-content: space-between;
+    }
+
+    &--center-on-medium {
+        justify-content: center;
+        
+        @mixin atLarge{
+            justify-content: space-between;
+        }
+        
+    }
+
+    &--wrap{
+        flex-wrap: wrap;
+    }
+
+    &--column-on-small{
+        flex-direction: column;
+
+        @mixin atMedium{
+            flex-direction: row;
+        }
+    }
+
+    &--column-on-medium {
+        flex-direction: column;
+
+        @mixin atLarge {
+            flex-direction: row;
+        }
+    }
+
+}

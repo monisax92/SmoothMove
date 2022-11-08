@@ -1,0 +1,33 @@
+.section-title{
+    color: $secondColor;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @mixin atMedium {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    @mixin atLarge{
+        font-size: 2.55rem;
+        font-weight: 300;
+    }
+
+    &--blue {
+        color: $mainColor;
+    }
+
+    &--testimonials{
+        margin-bottom: 7rem;
+    }
+
+    &--contact-details{
+        @mixin atLarge{
+          margin-bottom: 4rem;  
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.contact-info{
+
+    &__details{
+        text-align: left;
+        margin: 0 auto;
+        
+        @mixin atMedium {
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 .1rem;
+        }
+
+        @mixin atLarge {
+            flex-direction: column;
+        }
+
+        
+        &__data{
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+
+            @mixin atLarge{
+                font-size: 1.2rem;
+            }
+
+            li {
+                padding: .5rem 0;
+            }
+
+            a {
+                color: $text-dark;
+                margin-left: .5rem;
+            }            
+            
+            i {
+                color: $secondColor;
+            }
+        }
+
+        &__availability{
+            font-size: 1.1rem;
+            font-weight: 300;
+            padding-bottom: 3rem;
+
+            @mixin atLarge{
+                font-size: 1.1rem;
+                padding-bottom: 0;
+            }
+
+            h2{
+                color: $secondColor;
+                font-size: 1.3rem;
+                font-weight: 300;
+                margin-bottom: 1rem;
+                margin-top: 2.5rem;
+                
+                &:first-child{
+                    margin-top: 0;
+                }
+
+                @mixin atLarge{
+                    font-weight: 400;
+                }
+            }
+
+
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+
+
+    &__map iframe{
+        border-radius: 2px;
+        width: 100%;
+
+        @mixin atMedium {
+            width: 90%;
+        }
+
+        @mixin atLarge{
+            width: 40vw;
+        }
+    }
+
+    li{
+        list-style: none;
+    }
+
+
+
+
+        
+    
+        .fb,
+        .instagram,
+        .yt {
+            transition: all .3s;
+        }
+    
+        .fb:hover,
+        .instagram:hover,
+        .yt:hover {
+            transform: scale(1.2);
+            /* scale: 1.2; */
+            /* font-size: 2.2rem; */
+        }
+    
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 6rem;
+            text-decoration: none;
+            font-size: .8rem;
+            font-weight: bolder;
+            background-color: var(--color-primary-dark-transparent-high);
+            color: var(--color-text-medium);
+            text-align: center;
+            padding: 0;
+            display: inline-block;
+            margin-top: 1rem;
+            margin-left: -2rem;
+            border-radius: 6px;
+    
+            /* Position the tooltip text - see examples below! */
+            /* position: absolute;
+      z-index: 1; */
+        }
+    
+        a:link,
+        a:visited,
+        a:active {
+            text-decoration: none;
+        }
+    
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+}

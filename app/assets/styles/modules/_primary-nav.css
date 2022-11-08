@@ -1,0 +1,57 @@
+.primary-nav{
+
+    padding-top: 40px;
+
+    @mixin atLarge {
+        padding-top: 0;
+    }
+
+
+    &--pull-right {
+    
+        @mixin atMedium {
+            float: right;
+        }
+    }
+
+    ul{
+        clear: both;
+    }
+    
+    li{
+        list-style: none;
+        padding: .5rem 1rem;
+        
+
+        a{
+            background-color: rgba(0, 29, 61, 1);
+            border: solid $secondColor 1px;
+            border-radius: 2px;
+            color: $text-light;
+            display: block;
+            font-size: .8rem;
+            font-weight: 300;
+            padding: 5px 8px;
+            text-decoration: none;
+            transition: all .5s;
+
+            @mixin atLarge{
+                font-size: 1rem;
+                padding: .2rem 0;
+                background-color: transparent;
+                border: none;
+
+                &.is-current-link{
+                    color: $secondColor-lighter;
+                }
+                
+            }
+        }
+        
+
+
+        &:hover a{
+            color: $secondColor;
+        }
+    }
+}

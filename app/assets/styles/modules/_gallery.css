@@ -1,0 +1,40 @@
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    
+    @mixin atMedium{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @mixin atLarge{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr); 
+        width: 100%;
+    }
+
+    &__photo{
+        border: solid $mainColor-lightest 3px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        padding: 5px;
+
+        img{
+            height: 100%;
+            transition: transform .3s ease-in-out;
+            width: 100%;
+            
+
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+
+    }
+}

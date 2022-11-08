@@ -1,0 +1,65 @@
+.form{
+    margin-top: 10vh auto 3rem;
+
+    text-align: center;
+
+
+
+    &__group{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__group-left{
+        text-align: left;
+    }
+
+    &__group-right{
+        text-align: left;
+    }
+
+    &__label{
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    &__input{
+        border-radius: 5px;
+        font-size: 1.2rem;
+        outline: none;
+        margin-bottom: 1rem;
+        padding: .5rem .5rem;
+        width: 80vw;
+
+        @mixin atMedium {
+            width: 40vw;
+        }
+        
+        @mixin atLarge{
+           width: 30vw; 
+        }
+        
+    }
+
+    &__radio-box{
+        text-align: left;
+    }
+
+    &__radio{
+        font-size: 1rem;
+        font-weight: 200;
+        margin-left: 1rem;
+        margin-top: .5rem;
+    }
+
+    &__info{
+        font-size: 1rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+
+    .btn{
+        height: 3rem;
+        align-self: center;
+    }
+}

@@ -1,0 +1,45 @@
+.page-section{
+    padding: 2rem 0;
+    
+
+    @mixin atLarge{
+        /*height: 100vh;*/
+        padding: 6.5rem 0;
+
+        &--testimonials{
+            padding: 4rem 0;
+        }
+    }
+
+
+    &--blue {
+        background-color: $mainColor;
+        color: $text-light;
+    }
+
+
+    &__description{
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 1.65;
+        margin: 1rem auto 2rem;    
+        text-align: center;
+        
+
+        @mixin atMedium{
+            font-size: 1.2rem;
+            width: 80%;
+        }
+
+        @mixin atLarge {
+            font-size: 1.4rem;
+            width: 60%;
+        }
+
+
+
+        strong{
+            font-weight: 500;
+        }
+    }
+}

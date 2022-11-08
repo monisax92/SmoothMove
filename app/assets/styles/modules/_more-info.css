@@ -1,0 +1,31 @@
+.more-info{
+    display: block;
+    margin-top: 1.5rem;
+    padding-bottom: 1px;
+    text-align: right;
+
+    @mixin atMedium {
+        margin-top: 0;
+
+    }
+
+    &__link{
+        border-bottom: solid .1rem $secondColor;
+        color: $secondColor; 
+        display: inline-block;
+        font-size: 1.1rem; 
+        font-weight: 400;        
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        
+        @mixin atMedium{
+            font-size: 1.5rem;
+
+            &:hover {
+                border-bottom: none;
+                color: $mainColor-lightest;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.btn{
+    background-color: $mainColor;
+    border-radius: 3px;
+   
+    color: $text-light;
+    display: inline-block; /*to use padding*/
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: .45rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+
+    @mixin atMedium{ 
+        box-shadow: rgba(0, 8, 20, .6) .3rem .5rem .5rem;
+        padding: .75rem 1.2rem;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+            box-shadow: rgba(0, 8, 20, .6) .4rem .6rem .5rem;
+            transform: scale(1.05);
+        }
+
+        &:focus{
+            box-shadow: rgba(0, 8, 20, .6) .2rem .4rem .5rem;
+            transform: scale(.95);
+        }
+    } 
+
+
+    &--orange {
+        background-color: $secondColor;
+    }
+
+    &--large {
+        font-size: .9rem;
+        /*not needed as it's default then*/
+        padding: .5rem 1.2rem;
+
+        @mixin atMedium {
+            font-size: 1.25rem;
+            padding: .7rem 1.2rem;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.headline{
+    color: $mainColor;
+    font-size: 1.9rem;
+    font-weight: 300;    
+
+    &--centered{
+        text-align: center;
+    }
+}

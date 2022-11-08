@@ -1,0 +1,58 @@
+.feature-card{
+    margin-bottom: 1rem;
+    margin-top: 2rem;    
+    
+    @mixin atMedium {
+        margin-top: 0;
+        padding: 2rem 2rem;
+    }
+
+    &__image {
+
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+
+        @mixin atMedium {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    &__text-container {
+        margin: 0 auto;
+
+        @mixin atMedium {
+            width: 90%;
+            float: right;
+        }
+
+    }
+
+    &__title {
+        color: $mainColor;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        letter-spacing: .25em;
+        text-transform: uppercase;
+
+        @mixin atLarge{
+            font-size: 1.2rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        color: $text-dark;
+        font-weight: 300;
+
+        @mixin atLarge {
+            font-size: 1.3rem;
+        }
+    }
+}

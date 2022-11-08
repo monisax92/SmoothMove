@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Roboto, sant-serif;
+    color: $text-dark;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: $secondColor;
+}
+
+
+
+
+
+
+
+
+
+
+/*.gradient-secondary-color {
+    background: linear-gradient(100deg, var(--color-text-light), var(--color-secondary-light), var(--color-secondary-medium-transparent));
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.gradient-secondary-color-dark {
+    background: -webkit-linear-gradient(90deg, var(--color-start-bg-gradient-dark), 70%, var(--color-end-bg-gradient-dark));
+    background: -moz-linear-gradient(90deg, var(--color-start-bg-gradient-dark), 70%, var(--color-end-bg-gradient-dark));
+    background: linear-gradient(90deg, var(--color-start-bg-gradient-dark), 70%, var(--color-end-bg-gradient-dark));
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    color: var(--color-secondary-darkest);
+}*/
+
