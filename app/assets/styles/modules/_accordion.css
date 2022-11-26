@@ -23,7 +23,7 @@
 
     }
     
-    .active + div{
+    .active{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         
@@ -40,5 +40,6 @@
         max-height: 0;
         overflow: hidden;
         transition: all .2s ease-out;
+
     }
 }

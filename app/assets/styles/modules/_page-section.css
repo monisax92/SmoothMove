@@ -1,5 +1,6 @@
 .page-section{
     padding: 2rem 0;
+    z-index: 10;
     
 
     @mixin atLarge{

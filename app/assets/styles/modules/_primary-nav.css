@@ -1,6 +1,6 @@
 .primary-nav{
 
-    padding-top: 40px;
+
 
     @mixin atLarge {
         padding-top: 0;
@@ -16,11 +16,12 @@
 
     ul{
         clear: both;
+        height: 100%;
     }
     
     li{
         list-style: none;
-        padding: .5rem 1rem;
+        
         
 
         a{
@@ -31,13 +32,13 @@
             display: block;
             font-size: .8rem;
             font-weight: 300;
-            padding: 5px 8px;
             text-decoration: none;
             transition: all .5s;
+            padding: .5rem 1rem;
 
             @mixin atLarge{
                 font-size: 1rem;
-                padding: .2rem 0;
+                padding: 1.27rem 1rem;
                 background-color: transparent;
                 border: none;
 

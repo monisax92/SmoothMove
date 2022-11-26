@@ -1,7 +1,7 @@
 .btn{
     background-color: $mainColor;
+    border: none;
     border-radius: 3px;
-   
     color: $text-light;
     display: inline-block; /*to use padding*/
     font-weight: 300;
@@ -14,18 +14,18 @@
     
 
     @mixin atMedium{ 
-        box-shadow: rgba(0, 8, 20, .6) .3rem .5rem .5rem;
+        box-shadow: rgba(0, 8, 20, .4) .25rem .45rem .375rem;
         padding: .75rem 1.2rem;
         transition: all .3s ease-in-out;
 
         &:hover{
-            box-shadow: rgba(0, 8, 20, .6) .4rem .6rem .5rem;
-            transform: scale(1.05);
+            box-shadow: rgba(0, 8, 20, .5) .65rem .75rem .375rem;
+            transform: scale(1.1);
         }
 
         &:focus{
-            box-shadow: rgba(0, 8, 20, .6) .2rem .4rem .5rem;
-            transform: scale(.95);
+            box-shadow: rgba(0, 8, 20, .4) .25rem .45rem .375rem;
+            transform: scale(1);
         }
     } 
 
