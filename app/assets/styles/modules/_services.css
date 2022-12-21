@@ -12,4 +12,50 @@
             background-size: cover;
         }
     }
+
+
+    &__pricing-subsection{
+        background-color: rgba(252, 120, 2, .9);
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        
+    }
 }
+
+#services{
+    position: relative;
+}
+
+.pricing{
+    line-height: 2.5rem;
+
+    &__right{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+        @mixin atMedium {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+        
+        @mixin atLarge {
+            font-size: 1.5rem;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p{
+            color: $mainColor;
+            margin-top: 1rem;
+            line-height: 2rem;
+            font-style: italic;
+        }
+    }
+}
+

@@ -8,17 +8,30 @@
     margin-right: .5rem;
     position: relative;
 
+    &:last-child{
+        margin-bottom: 19rem;
+    }
+
 
 
     @mixin atMedium {
         border: solid 1px $mainColor-lightest;
         width: 80%;
         margin: 2rem auto 2rem;
+
+        &:last-child {
+            margin-bottom: 19rem;
+        }
     }
 
     @mixin atLarge{
-        
+
+        margin-bottom: 15rem;
         width: 45%;
+
+        &:last-child {
+            margin-bottom: 15rem;
+        }
     }
 
     &__image {

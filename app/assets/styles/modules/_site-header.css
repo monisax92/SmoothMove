@@ -3,7 +3,7 @@
     position: fixed;
     transition: background-color .3s ease-out;
     width: 100%;
-    z-index: 2;
+    z-index: 12;
 
 
     @mixin atLarge{
@@ -42,7 +42,7 @@
         p{
             display: inline-block;
             margin-left: .5rem;
-            padding-top: .5rem;
+            padding-top: .25rem;
         }
        
 
@@ -90,7 +90,8 @@
         color: $secondColor-lighter;
         display: inline-block;
         font-size: 1.2rem;
-        font-style: italic;
+        font-weight: 300;
+        letter-spacing: 2px;
         padding: .75rem .2rem;
         text-decoration: none;
         transition: all .5s;
