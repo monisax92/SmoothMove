@@ -1,21 +1,20 @@
-@define-mixin atMedium{
-    @media (min-width: 640px){
-        @mixin-content;
-    }
+@define-mixin atMedium {
+	@media (min-width: 640px) {
+		@mixin-content;
+	}
 }
 
-@define-mixin atLarge{
-    @media (min-width: 1010px){
-        @mixin-content;
-    }
+@define-mixin atLarge {
+	@media (min-width: 1100px) {
+		@mixin-content;
+	}
 }
 
 @define-mixin clearfix {
-
-    /*"fake" element for clearing floats*/
-    &::after {
-        content: '';
-        clear: both;
-        display: table;
-    }
+	/*"fake" element for clearing floats*/
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
 }

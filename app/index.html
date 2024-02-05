@@ -3,13 +3,13 @@
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/logo-dark-fav-circle.png">
-    <title>moverz</title>
+    <title>Smooth Move</title>
     <script src="https://kit.fontawesome.com/0fffcb10a4.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="removals, transport">
     <meta name="description"
-      content="Removals and transport with moverz. We will get you where you want to be. Faster, smarter, better.">
+      content="Removals and transport with Smooth Move. We will get you where you want to be. Faster, smarter, better.">
   </head>
 
   <body>
@@ -17,7 +17,7 @@
       <div class="wrapper">
         <div class="site-header__logo">
           <a href="#" class="site-header__company-name flex-container">
-            <img src="assets/images/icons/logo-dark-fav-circle.png"> <p>moverz</p>
+            <img src="assets/images/icons/logo-dark-fav-circle.png"> <p>Smooth Move</p>
           </a>
         </div>
 
@@ -30,6 +30,7 @@
             <ul class="flex-container flex-container--space-between flex-container--wrap flex-container--center-on-medium">
               <li><a href="#about-us" id="about-us-link">About us</a></li>
               <li><a href="#services" id="services-link">Services</a></li>
+              <li><a href="#calculator" id="calculator-link">Space calculator</a></li>
               <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
               <li><a href="#message-us" id="message-us-link">Message us</a></li>
               <li><a href="#contact-details" id="contact-details-link">Contact details</a></li>
@@ -156,6 +157,44 @@
       </div>
     </section>
 
+    <section id="calculator" class="page-section page-section--b-margin page-section--blue calculator-section" data-matching-link="#calculator-link">
+      <div class="wrapper">
+        <h2 class="section-title">Space calculator</h2>
+        <div class="calculator-container">
+          <!-- <div class="calculator-descr"> -->
+            <h3 class="calculator-descr">Select room/category and then quantity of each item applicable</h3>
+          <!-- </div> -->
+
+          <div class="calculator-input-box calculator-box">
+            <ul class="rooms">
+              <li data-room="bedroom" class="active">Bedroom</li>
+              <li data-room="dining-room">Dining Room</li>
+              <li data-room="family-room">Family Room</li>
+              <li data-room="hall">Hall</li>
+              <li data-room="laundry-room">Laundry Room</li>
+              <li data-room="lounge">Lounge</li>
+              <li data-room="kitchen">Kitchen</li>
+              <li data-room="outside">Outside</li>
+              <li data-room="saundries">Saundries</li>
+            </ul>
+            <hr />
+
+            <ul class="items">
+              <!-- 		<li>
+                <input data-space="1.2" type="number" value="0" min="0" name="double-bed">
+                <label for="double-bed"> double bed & mattress</label>
+                <p>(<span>0</span> m<sup>3</sup>)</p>
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="calculator-outcome-box calculator-box">
+	          <h3>Total space: <span class="total-span">0</span> m<sup>3</sup></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="testimonials" class="page-section page-section--t-margin page-section--b-margin page-section--testimonials" data-matching-link="#testimonials-link">
       <div class="wrapper">
@@ -167,7 +206,7 @@
               <img sizes="160w" srcset="assets/images/person1.jpg 160w, assets/images/person1-hi-dpi.jpg 320w">
             </div>
             <h3 class="testimonial__title">Amita Singh</h3>
-            <p class="testimonial__quote">&ldquo;The overall experience with moverz is outstanding. It's quick, simple and professional. Althought there's been a few problems,the staff provided an instant support and fixed the issue in no time.&rdquo;</p>
+            <p class="testimonial__quote">&ldquo;The overall experience with Smooth Move is outstanding. It's quick, simple and professional. Althought there's been a few problems,the staff provided an instant support and fixed the issue in no time.&rdquo;</p>
           </div>   
 
           <div class="testimonial">
@@ -403,7 +442,7 @@
 
     <footer class="site-footer">
       <div class="wrapper">
-          <p><span class="site-footer__text">Copyright &copy; 2022 moverz. All rights reserved. </span><a href="#message-us" class="btn btn--orange">Get in Touch</a></p>
+          <p><span class="site-footer__text">Copyright &copy; <span id="year-span"></span> Smooth Move. All rights reserved. </span><a href="#message-us" class="btn btn--orange">Get in Touch</a></p>
       </div>
     </footer>
   
