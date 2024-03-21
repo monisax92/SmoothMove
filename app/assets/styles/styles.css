@@ -1,4 +1,5 @@
-@import 'normalize.css'; /*for resets*/
+@import 'normalize.css';
+/*for resets*/
 @import 'base/_variables.css';
 @import 'base/_global.css';
 @import 'base/_mixins.css';
@@ -26,3 +27,5 @@
 @import 'modules/_form.css';
 @import 'modules/_services.css';
 @import 'modules/_calculator.css';
+@import 'modules/_bg-video.css';
+@import 'modules/_radio-btns.css';
